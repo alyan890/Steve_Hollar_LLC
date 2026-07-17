@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+:root {
+  --charcoal: #0e1110;
+  --charcoal-soft: #171b19;
+  --concrete: #8b8d87;
+  --concrete-light: #c9cac4;
+  --steel-blue: #1a6fd1;
+  --steel-blue-bright: #3b8ef0;
+  --safety-green: #a8e02c;
+  --off-white: #f2f1ea;
+  --caution-black: #141615;
+}
+
+@theme inline {
+  --color-charcoal: var(--charcoal);
+  --color-charcoal-soft: var(--charcoal-soft);
+  --color-concrete: var(--concrete);
+  --color-concrete-light: var(--concrete-light);
+  --color-steel-blue: var(--steel-blue);
+  --color-steel-blue-bright: var(--steel-blue-bright);
+  --color-safety-green: var(--safety-green);
+  --color-off-white: var(--off-white);
+  --font-display: var(--font-anton);
+  --font-body: var(--font-work-sans);
+  --font-mono: var(--font-jetbrains);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--charcoal);
+  color: var(--off-white);
+  font-family: var(--font-body);
+}
+
+/* Concrete grain texture overlay */
+.grain-overlay {
+  position: relative;
+}
+.grain-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+}
+
+/* Hazard stripe divider - jobsite caution tape motif */
+.hazard-stripe {
+  height: 10px;
+  background: repeating-linear-gradient(
+    135deg,
+    var(--safety-green) 0px,
+    var(--safety-green) 20px,
+    var(--caution-black) 20px,
+    var(--caution-black) 40px
+  );
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1.5px var(--off-white);
+  color: transparent;
+}
+
+::selection {
+  background: var(--safety-green);
+  color: var(--caution-black);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--charcoal);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--steel-blue);
+}
