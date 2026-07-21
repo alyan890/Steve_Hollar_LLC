@@ -32,7 +32,7 @@ export default function Nav() {
     >
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
         <Link href="/" className="font-display text-2xl tracking-wide text-off-white">
-          STEVE HOLLAR <span className="text-safety-green">CONCRETE</span>
+          STEVE HOLLER <span className="text-safety-green">CONCRETE</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 font-mono text-sm uppercase tracking-wider">

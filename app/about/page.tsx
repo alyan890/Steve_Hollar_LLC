@@ -4,7 +4,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import CtaBand from "@/components/CtaBand";
 
 export const metadata: Metadata = {
-  title: "About Us | Steve Hollar Concrete LLC",
+  title: "About Us | Steve Holler Concrete LLC",
   description:
     "Family-owned, father-son concrete team with 85+ years combined experience serving Brevard County, FL.",
 };
@@ -82,7 +82,7 @@ export default function AboutPage() {
               How We Work
             </p>
             <h2 className="font-display text-4xl md:text-6xl mb-14">
-              THE HOLLAR STANDARD
+              THE HOLLER STANDARD
             </h2>
           </ScrollReveal>
 
