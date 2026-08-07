@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import PageHeader from "@/components/PageHeader";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -16,15 +17,15 @@ const CATEGORIES = [
 ];
 
 const PROJECTS = [
-  { title: "Residential Driveway Pour", category: "Driveways", tone: "from-steel-blue to-charcoal" },
-  { title: "Backyard Patio Slab", category: "Patios", tone: "from-concrete to-charcoal" },
-  { title: "Commercial Foundation Slab", category: "Slabs", tone: "from-steel-blue-bright to-charcoal" },
-  { title: "Retaining Wall Build", category: "Retaining Walls", tone: "from-safety-green/40 to-charcoal" },
-  { title: "Site Grading Prep", category: "Grading", tone: "from-concrete to-charcoal" },
-  { title: "Block Wall Construction", category: "Block Work", tone: "from-steel-blue to-charcoal" },
-  { title: "Extended Driveway", category: "Driveways", tone: "from-safety-green/40 to-charcoal" },
-  { title: "Covered Patio Slab", category: "Patios", tone: "from-steel-blue-bright to-charcoal" },
-  { title: "Sidewalk Addition", category: "Slabs", tone: "from-concrete to-charcoal" },
+  { title: "Concrete Driveway Project", category: "Driveways", tone: "from-steel-blue to-charcoal", image: "/20250627_103248.jpg" },
+  { title: "Outdoor Patio Concrete Work", category: "Patios", tone: "from-concrete to-charcoal", image: "/20251028_132956.jpg" },
+  { title: "Concrete Slab Installation", category: "Slabs", tone: "from-steel-blue-bright to-charcoal", image: "/20251006_163431.jpg" },
+  { title: "Concrete & Masonry Project", category: "Retaining Walls", tone: "from-safety-green/40 to-charcoal", image: "/20260723_141440.jpg" },
+  { title: "Site Preparation Project", category: "Grading", tone: "from-concrete to-charcoal", image: "/20260527_130331.jpg" },
+  { title: "Masonry & Concrete Work", category: "Block Work", tone: "from-steel-blue to-charcoal", image: "/20260604_101016.jpg" },
+  { title: "Driveway & Access Project", category: "Driveways", tone: "from-safety-green/40 to-charcoal", image: "/20260702_083108.jpg" },
+  { title: "Outdoor Concrete Patio Project", category: "Patios", tone: "from-steel-blue-bright to-charcoal", image: "/20260605_094536.jpg" },
+  { title: "Concrete Walkway Project", category: "Slabs", tone: "from-concrete to-charcoal", image: "/20210922_154818.jpg" },
 ];
 
 export default function GalleryPage() {
@@ -58,13 +59,16 @@ export default function GalleryPage() {
             {filtered.map((p, i) => (
               <ScrollReveal key={p.title} delay={i * 0.05} y={24}>
                 <div
-                  className={`relative aspect-[4/3] bg-gradient-to-br ${p.tone} grain-overlay overflow-hidden group cursor-pointer`}
+                  className={`relative aspect-4/3 bg-linear-to-br ${p.tone} grain-overlay overflow-hidden group cursor-pointer`}
                 >
-                  <div className="absolute inset-0 flex items-center justify-center opacity-40 group-hover:opacity-70 transition-opacity">
-                    <span className="font-mono text-xs uppercase tracking-widest text-off-white text-center px-4">
-                      Photo Coming Soon
-                    </span>
-                  </div>
+                  <Image
+                    src={p.image}
+                    alt={p.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-linear-to-t from-charcoal/85 via-charcoal/20 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 bg-charcoal/85 px-4 py-3">
                     <p className="font-mono text-[11px] text-safety-green uppercase tracking-widest">
                       {p.category}
@@ -77,7 +81,7 @@ export default function GalleryPage() {
           </div>
 
           <p className="text-center text-concrete-light font-mono text-sm mt-14">
-            Real project photos coming soon — this gallery updates as jobs wrap up.
+            Project photos are now featured throughout the gallery as jobs are completed.
           </p>
         </div>
       </section>

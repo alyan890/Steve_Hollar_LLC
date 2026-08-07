@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 import ScrollReveal from "@/components/ScrollReveal";
 import CtaBand from "@/components/CtaBand";
@@ -12,19 +13,27 @@ export const metadata: Metadata = {
 const VALUES = [
   {
     title: "New & Old Construction",
-    desc: "Whether it's ground-up new build or working into an existing property, we handle both.",
+    desc:
+      "From ground-up builds to updating existing concrete features, we scope the job, recommend durable solutions, and coordinate with other trades to keep the project moving.",
+    image: "/20250627_103248.jpg",
   },
   {
     title: "Demo & Haul Away",
-    desc: "Old concrete out, debris hauled off — site left clean and ready.",
+    desc:
+      "We safely remove old slabs and demo material, sort waste appropriately, and haul debris away so your site is clean and ready for the next phase.",
+    image: "/20260527_130331.jpg",
   },
   {
     title: "Form, Prep & Pour",
-    desc: "Every job done right from the ground up: forming, prep work, and the pour itself.",
+    desc:
+      "Proper forming, subgrade preparation, reinforcement placement, and controlled pours are essential — we follow disciplined steps to ensure long-term performance.",
+    image: "/20251006_163431.jpg",
   },
   {
     title: "If We Break It, We Fix It",
-    desc: "We stand behind our work. Straightforward accountability, no excuses.",
+    desc:
+      "Repairs and touch-ups are part of the job. We assess damage, recommend corrective measures, and perform repairs that restore strength and appearance.",
+    image: "/20260604_101016.jpg",
   },
 ];
 
@@ -61,7 +70,7 @@ export default function AboutPage() {
                   key={s}
                   className="flex items-center gap-3 font-mono text-sm uppercase tracking-wide"
                 >
-                  <span className="w-2 h-2 bg-safety-green flex-shrink-0" />
+                  <span className="w-2 h-2 bg-safety-green shrink-0" />
                   {s}
                 </li>
               ))}
@@ -70,6 +79,12 @@ export default function AboutPage() {
               We don&rsquo;t believe in cutting corners. Our goal is simple:
               deliver straightforward service, take pride in our
               craftsmanship, and ensure you love the final result.
+            </p>
+            <p className="text-lg text-concrete-light leading-relaxed mt-6">
+              We use quality-ready mixes, proper reinforcement, and proven
+              finishing techniques to ensure the surface performs for years.
+              If a custom finish or color is required, we walk you through
+              options and provide mockups so you get exactly what you want.
             </p>
           </ScrollReveal>
         </div>
@@ -89,11 +104,16 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-6">
             {VALUES.map((v, i) => (
               <ScrollReveal key={v.title} delay={i * 0.08}>
-                <div className="border border-concrete/30 p-8 hover:border-safety-green transition-colors h-full">
-                  <h3 className="font-display text-2xl mb-3">
-                    {v.title.toUpperCase()}
-                  </h3>
-                  <p className="text-concrete-light">{v.desc}</p>
+                <div className="border border-concrete/30 p-6 hover:border-safety-green transition-colors h-full grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-6 items-start">
+                  <div className="relative w-full h-40 sm:h-28 sm:w-28 rounded overflow-hidden">
+                    <Image src={v.image} alt={v.title} fill className="object-cover" />
+                  </div>
+                  <div>
+                    <h3 className="font-display text-2xl mb-3">
+                      {v.title.toUpperCase()}
+                    </h3>
+                    <p className="text-concrete-light">{v.desc}</p>
+                  </div>
                 </div>
               </ScrollReveal>
             ))}
