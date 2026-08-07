@@ -18,7 +18,7 @@ const CATEGORIES = [
 
 const PROJECTS = [
   { title: "Concrete Driveway Project", category: "Driveways", tone: "from-steel-blue to-charcoal", image: "/optimized/20250627_103248.webp" },
-  { title: "Outdoor Patio Concrete Work", category: "Patios", tone: "from-concrete to-charcoal", image: "/optimized/20251028_132956.webp" },
+  { title: "Outdoor Patio Concrete Work", category: "Patios", tone: "from-concrete to-charcoal", image: "/optimized/20260702_083108.webp" },
   { title: "Concrete Slab Installation", category: "Slabs", tone: "from-steel-blue-bright to-charcoal", image: "/optimized/20251006_163431.webp" },
   { title: "Concrete & Masonry Project", category: "Retaining Walls", tone: "from-safety-green/40 to-charcoal", image: "/optimized/20260723_141440.webp" },
   { title: "Site Preparation Project", category: "Grading", tone: "from-concrete to-charcoal", image: "/optimized/20260527_130331.webp" },

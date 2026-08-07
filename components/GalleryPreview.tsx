@@ -4,7 +4,7 @@ import ScrollReveal from "./ScrollReveal";
 
 const PLACEHOLDER_TILES = [
   { label: "Concrete Driveway", tone: "from-steel-blue to-charcoal", image: "/optimized/20250627_103248.webp" },
-  { label: "Outdoor Patio", tone: "from-concrete to-charcoal", image: "/optimized/20251028_132956.webp" },
+  { label: "Outdoor Patio", tone: "from-concrete to-charcoal", image: "/optimized/20260702_083108.webp" },
   { label: "Concrete & Masonry", tone: "from-safety-green/40 to-charcoal", image: "/optimized/20260723_141440.webp" },
   { label: "Site Preparation", tone: "from-steel-blue-bright to-charcoal", image: "/optimized/20260527_130331.webp" },
   { label: "Masonry Work", tone: "from-concrete to-charcoal", image: "/optimized/20260604_101016.webp" },
