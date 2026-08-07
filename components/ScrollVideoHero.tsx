@@ -46,7 +46,8 @@ export default function ScrollVideoHero() {
         loop
         muted
         playsInline
-        preload="auto"
+        preload="metadata"
+        poster="/optimized/20251006_163431.webp"
         className="absolute inset-0 z-0 h-full w-full object-cover"
       >
         <source src="/video/vecteezy_house-rotating-background_2019515.mp4" type="video/mp4" />

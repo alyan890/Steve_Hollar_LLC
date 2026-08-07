@@ -17,15 +17,15 @@ const CATEGORIES = [
 ];
 
 const PROJECTS = [
-  { title: "Concrete Driveway Project", category: "Driveways", tone: "from-steel-blue to-charcoal", image: "/20250627_103248.jpg" },
-  { title: "Outdoor Patio Concrete Work", category: "Patios", tone: "from-concrete to-charcoal", image: "/20251028_132956.jpg" },
-  { title: "Concrete Slab Installation", category: "Slabs", tone: "from-steel-blue-bright to-charcoal", image: "/20251006_163431.jpg" },
-  { title: "Concrete & Masonry Project", category: "Retaining Walls", tone: "from-safety-green/40 to-charcoal", image: "/20260723_141440.jpg" },
-  { title: "Site Preparation Project", category: "Grading", tone: "from-concrete to-charcoal", image: "/20260527_130331.jpg" },
-  { title: "Masonry & Concrete Work", category: "Block Work", tone: "from-steel-blue to-charcoal", image: "/20260604_101016.jpg" },
-  { title: "Driveway & Access Project", category: "Driveways", tone: "from-safety-green/40 to-charcoal", image: "/20260702_083108.jpg" },
-  { title: "Outdoor Concrete Patio Project", category: "Patios", tone: "from-steel-blue-bright to-charcoal", image: "/20260605_094536.jpg" },
-  { title: "Concrete Walkway Project", category: "Slabs", tone: "from-concrete to-charcoal", image: "/20210922_154818.jpg" },
+  { title: "Concrete Driveway Project", category: "Driveways", tone: "from-steel-blue to-charcoal", image: "/optimized/20250627_103248.webp" },
+  { title: "Outdoor Patio Concrete Work", category: "Patios", tone: "from-concrete to-charcoal", image: "/optimized/20251028_132956.webp" },
+  { title: "Concrete Slab Installation", category: "Slabs", tone: "from-steel-blue-bright to-charcoal", image: "/optimized/20251006_163431.webp" },
+  { title: "Concrete & Masonry Project", category: "Retaining Walls", tone: "from-safety-green/40 to-charcoal", image: "/optimized/20260723_141440.webp" },
+  { title: "Site Preparation Project", category: "Grading", tone: "from-concrete to-charcoal", image: "/optimized/20260527_130331.webp" },
+  { title: "Masonry & Concrete Work", category: "Block Work", tone: "from-steel-blue to-charcoal", image: "/optimized/20260604_101016.webp" },
+  { title: "Driveway & Access Project", category: "Driveways", tone: "from-safety-green/40 to-charcoal", image: "/optimized/20260702_083108.webp" },
+  { title: "Outdoor Concrete Patio Project", category: "Patios", tone: "from-steel-blue-bright to-charcoal", image: "/optimized/20260605_094536.webp" },
+  { title: "Concrete Walkway Project", category: "Slabs", tone: "from-concrete to-charcoal", image: "/optimized/20210922_154818.webp" },
 ];
 
 export default function GalleryPage() {

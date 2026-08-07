@@ -15,25 +15,25 @@ const VALUES = [
     title: "New & Old Construction",
     desc:
       "From ground-up builds to updating existing concrete features, we scope the job, recommend durable solutions, and coordinate with other trades to keep the project moving.",
-    image: "/20250627_103248.jpg",
+    image: "/optimized/20250627_103248.webp",
   },
   {
     title: "Demo & Haul Away",
     desc:
       "We safely remove old slabs and demo material, sort waste appropriately, and haul debris away so your site is clean and ready for the next phase.",
-    image: "/20260527_130331.jpg",
+    image: "/optimized/20260527_130331.webp",
   },
   {
     title: "Form, Prep & Pour",
     desc:
       "Proper forming, subgrade preparation, reinforcement placement, and controlled pours are essential — we follow disciplined steps to ensure long-term performance.",
-    image: "/20251006_163431.jpg",
+    image: "/optimized/20251006_163431.webp",
   },
   {
     title: "If We Break It, We Fix It",
     desc:
       "Repairs and touch-ups are part of the job. We assess damage, recommend corrective measures, and perform repairs that restore strength and appearance.",
-    image: "/20260604_101016.jpg",
+    image: "/optimized/20260604_101016.webp",
   },
 ];
 

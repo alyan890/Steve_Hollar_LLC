@@ -3,12 +3,12 @@ import Link from "next/link";
 import ScrollReveal from "./ScrollReveal";
 
 const PLACEHOLDER_TILES = [
-  { label: "Concrete Driveway", tone: "from-steel-blue to-charcoal", image: "/20250627_103248.jpg" },
-  { label: "Outdoor Patio", tone: "from-concrete to-charcoal", image: "/20251028_132956.jpg" },
-  { label: "Concrete & Masonry", tone: "from-safety-green/40 to-charcoal", image: "/20260723_141440.jpg" },
-  { label: "Site Preparation", tone: "from-steel-blue-bright to-charcoal", image: "/20260527_130331.jpg" },
-  { label: "Masonry Work", tone: "from-concrete to-charcoal", image: "/20260604_101016.jpg" },
-  { label: "Concrete Walkway", tone: "from-safety-green/40 to-charcoal", image: "/20210922_154818.jpg" },
+  { label: "Concrete Driveway", tone: "from-steel-blue to-charcoal", image: "/optimized/20250627_103248.webp" },
+  { label: "Outdoor Patio", tone: "from-concrete to-charcoal", image: "/optimized/20251028_132956.webp" },
+  { label: "Concrete & Masonry", tone: "from-safety-green/40 to-charcoal", image: "/optimized/20260723_141440.webp" },
+  { label: "Site Preparation", tone: "from-steel-blue-bright to-charcoal", image: "/optimized/20260527_130331.webp" },
+  { label: "Masonry Work", tone: "from-concrete to-charcoal", image: "/optimized/20260604_101016.webp" },
+  { label: "Concrete Walkway", tone: "from-safety-green/40 to-charcoal", image: "/optimized/20210922_154818.webp" },
 ];
 
 export default function GalleryPreview() {
