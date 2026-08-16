@@ -41,7 +41,7 @@ export default function ContactPage() {
                   Service Area
                 </p>
                 <p className="text-lg text-concrete-light">
-                  Serving Brevard County, FL and surrounding areas
+                  Serving Orange County, FL and surrounding areas
                 </p>
               </div>
               <div>

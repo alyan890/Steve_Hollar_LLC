@@ -57,10 +57,10 @@ export default function ScrollVideoHero() {
 
       <div ref={contentRef} className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6 text-center will-change-transform">
         <p className="mb-4 font-mono text-sm uppercase tracking-[0.3em] text-safety-green">
-          3rd Generation &middot; Brevard County, FL
+          3rd Generation &middot; Orange County, FL
         </p>
 
-        <h1 className="font-display text-[13vw] leading-[0.9] text-off-white md:text-[7vw]">
+        <h1 className="font-display text-[13vw] leading-[0.9] text-steel-blue-bright drop-shadow-[0_2px_10px_rgba(14,17,16,0.85)] md:text-[7vw]">
           {"WHEN YOU'RE DONE WITH THE REST,".split(" ").map((word, i) => (
             <span key={i} className="mr-[0.25em] inline-block">
               {word}

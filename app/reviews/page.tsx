@@ -4,8 +4,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import CtaBand from "@/components/CtaBand";
 
 export const metadata: Metadata = {
-  title: "Reviews | Steve Holler Concrete LLC",
-  description: "See what customers say about Steve Holler Concrete LLC.",
+  title: "Reviews | Steve Hollar Concrete LLC",
+  description: "See what customers say about Steve Hollar Concrete LLC.",
 };
 
 const REVIEWS = Array.from({ length: 6 }).map(() => ({

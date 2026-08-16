@@ -1,11 +1,11 @@
 import ScrollReveal from "./ScrollReveal";
 
 const SERVICES = [
-  { name: "Slabs", desc: "Foundation & floor slabs poured right, built to last." },
-  { name: "Driveways", desc: "Durable driveways that hold up to daily wear." },
-  { name: "Patios", desc: "Outdoor living spaces built for your backyard." },
+  { name: "Slabs", desc: "Foundations & footers poured right & built to last." },
+  { name: "Driveways", desc: "Durable driveways built to withstand the test of time." },
+  { name: "Patios", desc: "Build your foundation on a patio that's built to last." },
   { name: "Sidewalks", desc: "Clean, code-compliant walkways, residential & commercial." },
-  { name: "Grading", desc: "Site prep and grading to get the ground ready right." },
+  { name: "Grading", desc: "Site prep, grading, & clean up to get your site right." },
   { name: "Additions", desc: "Concrete work for home & building additions." },
   { name: "Block Work", desc: "Solid block construction for walls & structures." },
   { name: "Retaining Walls", desc: "Built to hold ground and look good doing it." },

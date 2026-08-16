@@ -32,7 +32,7 @@ export default function Nav() {
     >
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
         <Link href="/" className="font-display text-2xl tracking-wide text-off-white">
-          STEVE HOLLER <span className="text-safety-green">CONCRETE</span>
+          STEVE HOLLAR <span className="text-safety-green">CONCRETE</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 font-mono text-sm uppercase tracking-wider">
@@ -43,7 +43,7 @@ export default function Nav() {
               className="relative text-off-white/90 hover:text-safety-green transition-colors group"
             >
               {link.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-safety-green transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-safety-green transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
           <a

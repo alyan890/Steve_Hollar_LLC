@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div>
           <p className="font-display text-2xl mb-2">
-            STEVE HOLLER <span className="text-safety-green">CONCRETE</span>
+            STEVE HOLLAR <span className="text-safety-green">CONCRETE</span>
           </p>
           <p className="font-mono text-sm text-concrete-light">
             &ldquo;When you&rsquo;re done with the rest, holler for the best!&rdquo;
@@ -56,14 +56,14 @@ export default function Footer() {
                 steveh@stevehollarconcretellc.com
               </a>
             </li>
-            <li className="text-concrete-light">Serving Brevard County, FL</li>
+            <li className="text-concrete-light">Serving Orange County, FL</li>
             <li className="pt-1 text-xs">Licensed &amp; Insured &middot; Free Estimates</li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-concrete/10 py-5 text-center text-xs font-mono text-concrete-light">
-        &copy; {new Date().getFullYear()} Steve Holler Concrete LLC. All Rights Reserved.
+        &copy; {new Date().getFullYear()} Steve Hollar Concrete LLC. All Rights Reserved.
       </div>
     </footer>
   );

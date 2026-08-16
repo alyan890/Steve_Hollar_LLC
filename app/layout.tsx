@@ -24,9 +24,9 @@ const jetbrains = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Steve Holler Concrete LLC | Brevard County Concrete Contractor",
+  title: "Steve Hollar Concrete LLC | Orange County Concrete Contractor",
   description:
-    "Family-owned, 3rd generation concrete contractor serving Brevard County, FL. Slabs, driveways, patios, block work, grading & more. Licensed & insured. Free estimates.",
+    "Family-owned, 3rd generation concrete contractor serving Orange County, FL. Slabs, driveways, patios, block work, grading & more. Licensed & insured. Free estimates.",
 };
 
 export default function RootLayout({
