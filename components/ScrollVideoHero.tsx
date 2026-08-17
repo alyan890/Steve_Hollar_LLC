@@ -67,7 +67,7 @@ export default function ScrollVideoHero() {
             </span>
           ))}
           <br />
-          <span className="text-safety-green">HOLLER</span> FOR THE BEST
+          <span className="text-safety-green">HOLLAR</span> FOR THE BEST
         </h1>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">

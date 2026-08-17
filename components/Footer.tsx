@@ -21,7 +21,7 @@ export default function Footer() {
             STEVE HOLLAR <span className="text-safety-green">CONCRETE</span>
           </p>
           <p className="font-mono text-sm text-concrete-light">
-            &ldquo;When you&rsquo;re done with the rest, holler for the best!&rdquo;
+            &ldquo;When you&rsquo;re done with the rest, hollar for the best!&rdquo;
           </p>
         </div>
 
