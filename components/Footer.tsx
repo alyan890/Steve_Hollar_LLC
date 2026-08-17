@@ -18,10 +18,10 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div>
           <p className="font-display text-2xl mb-2">
-            STEVE HOLLAR <span className="text-safety-green">CONCRETE</span>
+            STEVE HOLLAR <span className="text-safety-green">CONCRETE LLC</span>
           </p>
           <p className="font-mono text-sm text-concrete-light">
-            &ldquo;When you&rsquo;re done with the rest, hollar for the best!&rdquo;
+            &ldquo;When you&rsquo;re done with the rest, Hollar for the best!&rdquo;
           </p>
         </div>
 
