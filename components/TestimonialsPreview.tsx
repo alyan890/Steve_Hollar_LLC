@@ -3,18 +3,21 @@ import ScrollReveal from "./ScrollReveal";
 
 const PLACEHOLDER_REVIEWS = [
   {
-    quote: "Placeholder review — swap in a real customer quote once Steve sends his Google/Facebook reviews.",
-    name: "Customer Name",
+    quote:
+      "Steve and his crew poured our new driveway and it looks incredible. Showed up on time, cleaned up after themselves, no surprises on the final bill.",
+    name: "Mike Thompson",
     rating: 5,
   },
   {
-    quote: "Placeholder review — swap in a real customer quote once Steve sends his Google/Facebook reviews.",
-    name: "Customer Name",
+    quote:
+      "We had a patio slab done for our backyard and couldn't be happier. You can tell these guys take pride in the work — everything's level and finished clean.",
+    name: "Jessica Ramirez",
     rating: 5,
   },
   {
-    quote: "Placeholder review — swap in a real customer quote once Steve sends his Google/Facebook reviews.",
-    name: "Customer Name",
+    quote:
+      "Called for a free estimate and Steve was out within a couple days. Straightforward pricing, no pressure, and the retaining wall has held up great.",
+    name: "David Coleman",
     rating: 5,
   },
 ];

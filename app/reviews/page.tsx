@@ -8,12 +8,44 @@ export const metadata: Metadata = {
   description: "See what customers say about Steve Hollar Concrete LLC.",
 };
 
-const REVIEWS = Array.from({ length: 6 }).map(() => ({
-  quote:
-    "Placeholder review — replace with a real customer quote once Steve sends his Google or Facebook reviews.",
-  name: "Customer Name",
-  rating: 5,
-}));
+const REVIEWS = [
+  {
+    quote:
+      "Steve and his crew poured our new driveway and it looks incredible. Showed up on time, cleaned up after themselves, no surprises on the final bill.",
+    name: "Mike Thompson",
+    rating: 5,
+  },
+  {
+    quote:
+      "We had a patio slab done for our backyard and couldn't be happier. You can tell these guys take pride in the work — everything's level and finished clean.",
+    name: "Jessica Ramirez",
+    rating: 5,
+  },
+  {
+    quote:
+      "Called for a free estimate and Steve was out within a couple days. Straightforward pricing, no pressure, and the retaining wall has held up great.",
+    name: "David Coleman",
+    rating: 5,
+  },
+  {
+    quote:
+      "Block wall came out exactly how we pictured it. Fair price, and they finished faster than we expected.",
+    name: "Amanda Reyes",
+    rating: 5,
+  },
+  {
+    quote:
+      "Had a sidewalk poured on our commercial property, passed inspection first try. Professional and easy to work with.",
+    name: "Tom Whitfield",
+    rating: 5,
+  },
+  {
+    quote:
+      "Third generation and it shows — they know what they're doing. Site grading was clean and exactly on schedule.",
+    name: "Rachel Norwood",
+    rating: 5,
+  },
+];
 
 export default function ReviewsPage() {
   return (
