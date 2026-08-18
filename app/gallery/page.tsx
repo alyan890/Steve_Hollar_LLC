@@ -26,6 +26,10 @@ const PROJECTS = [
   { title: "Driveway & Access Project", category: "Driveways", tone: "from-safety-green/40 to-charcoal", image: "/optimized/20260702_083108.webp" },
   { title: "Outdoor Concrete Patio Project", category: "Patios", tone: "from-steel-blue-bright to-charcoal", image: "/optimized/20260605_094536.webp" },
   { title: "Concrete Walkway Project", category: "Slabs", tone: "from-concrete to-charcoal", image: "/optimized/20210922_154818.webp" },
+  { title: "Residential Driveway Pour", category: "Driveways", tone: "from-steel-blue to-charcoal", image: "/optimized/WhatsApp Image 2026-08-18 at 10.27.31 PM.webp" },
+  { title: "Backyard Patio Extension", category: "Patios", tone: "from-concrete to-charcoal", image: "/optimized/WhatsApp Image 2026-08-18 at 10.27.31 PM (1).webp" },
+  { title: "Foundation Slab Work", category: "Slabs", tone: "from-steel-blue-bright to-charcoal", image: "/optimized/WhatsApp Image 2026-08-18 at 10.27.32 PM.webp" },
+  { title: "Retaining Wall Construction", category: "Retaining Walls", tone: "from-safety-green/40 to-charcoal", image: "/optimized/WhatsApp Image 2026-08-18 at 10.27.32 PM (1).webp" },
 ];
 
 export default function GalleryPage() {
