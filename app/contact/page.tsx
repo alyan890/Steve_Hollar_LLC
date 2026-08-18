@@ -3,9 +3,42 @@
 import { useState } from "react";
 import PageHeader from "@/components/PageHeader";
 import ScrollReveal from "@/components/ScrollReveal";
+import { a } from "framer-motion/client";
+
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xzepjnea";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    setError(false);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+        form.reset();
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <main>
@@ -29,10 +62,10 @@ export default function ContactPage() {
                 <p className="font-mono text-xs uppercase tracking-widest text-safety-green mb-1">
                   Email
                 </p>
-                <a
+                
                   href="mailto:steveh@stevehollarconcretellc.com"
                   className="text-lg hover:text-safety-green transition-colors break-all"
-                >
+               <a>
                   steveh@stevehollarconcretellc.com
                 </a>
               </div>
@@ -41,7 +74,7 @@ export default function ContactPage() {
                   Service Area
                 </p>
                 <p className="text-lg text-concrete-light">
-                  Serving Orange County, FL and surrounding areas
+                  Serving Brevard County, FL and surrounding areas
                 </p>
               </div>
               <div>
@@ -69,19 +102,14 @@ export default function ContactPage() {
                   </p>
                 </div>
               ) : (
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    setSubmitted(true);
-                  }}
-                  className="space-y-5"
-                >
+                <form onSubmit={handleSubmit} className="space-y-5">
                   <div>
                     <label className="block font-mono text-xs uppercase tracking-widest text-concrete-light mb-2">
                       Name
                     </label>
                     <input
                       required
+                      name="name"
                       type="text"
                       className="w-full bg-charcoal-soft border border-concrete/30 px-4 py-3 text-off-white focus:border-safety-green outline-none transition-colors"
                     />
@@ -92,6 +120,7 @@ export default function ContactPage() {
                     </label>
                     <input
                       required
+                      name="phone"
                       type="tel"
                       className="w-full bg-charcoal-soft border border-concrete/30 px-4 py-3 text-off-white focus:border-safety-green outline-none transition-colors"
                     />
@@ -102,6 +131,7 @@ export default function ContactPage() {
                     </label>
                     <input
                       required
+                      name="email"
                       type="email"
                       className="w-full bg-charcoal-soft border border-concrete/30 px-4 py-3 text-off-white focus:border-safety-green outline-none transition-colors"
                     />
@@ -112,20 +142,25 @@ export default function ContactPage() {
                     </label>
                     <textarea
                       required
+                      name="message"
                       rows={4}
                       className="w-full bg-charcoal-soft border border-concrete/30 px-4 py-3 text-off-white focus:border-safety-green outline-none transition-colors resize-none"
                     />
                   </div>
+
+                  {error && (
+                    <p className="text-red-400 text-sm font-mono">
+                      Something went wrong — please try again or call us directly.
+                    </p>
+                  )}
+
                   <button
                     type="submit"
-                    className="w-full bg-safety-green text-caution-black font-mono font-bold uppercase tracking-wider px-8 py-4 hover:bg-steel-blue-bright hover:text-off-white transition-colors"
+                    disabled={loading}
+                    className="w-full bg-safety-green text-caution-black font-mono font-bold uppercase tracking-wider px-8 py-4 hover:bg-steel-blue-bright hover:text-off-white transition-colors disabled:opacity-60"
                   >
-                    Send Request
+                    {loading ? "Sending..." : "Send Request"}
                   </button>
-                  <p className="text-xs text-concrete-light font-mono">
-                    Note: form needs to be wired up to an email/CRM service
-                    (e.g. Formspree, EmailJS) before launch.
-                  </p>
                 </form>
               )}
             </div>

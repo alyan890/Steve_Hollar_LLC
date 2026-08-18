@@ -31,8 +31,11 @@ export default function Nav() {
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
-        <Link href="/" className="font-display text-2xl tracking-wide text-off-white">
-          STEVE HOLLAR <span className="text-safety-green">CONCRETE LLC</span>
+        <Link href="/" className="flex items-center gap-3 min-w-0">
+          <img src="/logo.png" alt="Hollar Concrete logo" className="h-20 w-auto flex-shrink-0" />
+          <span className="hidden md:inline-block font-display text-2xl tracking-wide text-off-white min-w-0 truncate">
+            STEVE HOLLAR <span className="text-safety-green">CONCRETE LLC</span>
+          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 font-mono text-sm uppercase tracking-wider">
