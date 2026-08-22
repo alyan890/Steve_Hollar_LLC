@@ -24,6 +24,7 @@ const jetbrains = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://stevehollarconcrete.com"),
   title: "Steve Hollar Concrete LLC | Florida Concrete Contractor",
   description:
     "Family-owned, 3rd generation concrete contractor serving all your concrete needs across FL. Slabs, driveways, patios, block work, grading & more. Licensed & insured. Free estimates.",
