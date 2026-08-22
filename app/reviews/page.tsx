@@ -80,7 +80,7 @@ export default function ReviewsPage() {
               We&rsquo;d love to hear from you — leave us a review.
             </p>
             <a
-              href="https://www.google.com/search?q=steve+hollar+concrete+llc&rlz=1C1UEAD_enPK1036PK1036&oq=steve+hollar+concrete&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyCggBEEUYFhgeGDkyCAgCEAAYFhgeMg0IAxAAGIYDGIAEGIoFMgYIBBBFGDwyBggFEEUYPDIGCAYQRRg90gEINTU3NGowajeoAgCwAgA&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x2e4f7342d6c3b083:0x39153252b3cac7e9,3,,,,"
+              href="https://www.google.com/search?sca_esv=6c4be297c7288ca3&rlz=1C1UEAD_enPK1036PK1036&sxsrf=APpeQnvRE5BXo3Vl3RzOs4ynU5TiWxNgGA:1787412742780&q=steve+hollar+concrete+llc+reviews&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_9fdWiv2vbEAcMAMQ3gCX97qI0ZTvbY4LtHgr9MF50ZzwNYf2wK__HOtrbrft5RM57-O1FFbxIymfi4o0_gxLK1MVp-I04GC51ZMQhXnz9a1U8nWZw%3D%3D&sa=X&ved=2ahUKEwiGo-asx7SWAxXk2AIHHW9iE1EQ9qsLegQIHBAG&biw=384&bih=729&dpr=1.88#ebo=1"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-safety-green text-caution-black font-mono font-bold uppercase tracking-wider px-8 py-4 hover:bg-steel-blue-bright hover:text-off-white transition-colors"
