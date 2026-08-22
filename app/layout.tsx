@@ -24,9 +24,38 @@ const jetbrains = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Steve Hollar Concrete LLC | Orange County Concrete Contractor",
+  title: "Steve Hollar Concrete LLC | Florida Concrete Contractor",
   description:
-    "Family-owned, 3rd generation concrete contractor serving Orange County, FL. Slabs, driveways, patios, block work, grading & more. Licensed & insured. Free estimates.",
+    "Family-owned, 3rd generation concrete contractor serving all your concrete needs across FL. Slabs, driveways, patios, block work, grading & more. Licensed & insured. Free estimates.",
+  openGraph: {
+    title: "Steve Hollar Concrete LLC | Florida Concrete Contractor",
+    description:
+      "Family-owned, 3rd generation concrete contractor serving all your concrete needs across FL. Slabs, driveways, patios, block work, grading & more. Licensed & insured. Free estimates.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "Steve Hollar Concrete LLC Logo",
+      },
+    ],
+    type: "website",
+    locale: "en_US",
+    siteName: "Steve Hollar Concrete LLC",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Steve Hollar Concrete LLC | Florida Concrete Contractor",
+    description:
+      "Family-owned, 3rd generation concrete contractor serving all your concrete needs across FL.",
+    images: ["/logo.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/logo.png",
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({

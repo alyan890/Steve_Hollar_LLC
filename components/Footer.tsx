@@ -56,7 +56,7 @@ export default function Footer() {
                 steveh@stevehollarconcretellc.com
               </a>
             </li>
-            <li className="text-concrete-light">Serving Orange County, FL</li>
+            <li className="text-concrete-light">Serving all your concrete needs</li>
             <li className="pt-1 text-xs">Licensed &amp; Insured &middot; Free Estimates</li>
           </ul>
         </div>

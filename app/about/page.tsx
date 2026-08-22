@@ -7,7 +7,7 @@ import CtaBand from "@/components/CtaBand";
 export const metadata: Metadata = {
   title: "About Us | Steve Hollar Concrete LLC",
   description:
-    "Family-owned, father-son concrete team with 85+ years combined experience serving Orange County, FL.",
+    "Family-owned, father-son concrete team with 85+ years combined experience serving all your concrete needs across FL.",
 };
 
 const VALUES = [

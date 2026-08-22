@@ -80,7 +80,9 @@ export default function ReviewsPage() {
               We&rsquo;d love to hear from you — leave us a review.
             </p>
             <a
-              href="tel:321-229-1012"
+              href="https://www.google.com/search?q=steve+hollar+concrete+llc&rlz=1C1UEAD_enPK1036PK1036&oq=steve+hollar+concrete&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyCggBEEUYFhgeGDkyCAgCEAAYFhgeMg0IAxAAGIYDGIAEGIoFMgYIBBBFGDwyBggFEEUYPDIGCAYQRRg90gEINTU3NGowajeoAgCwAgA&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x2e4f7342d6c3b083:0x39153252b3cac7e9,1,,,,"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-safety-green text-caution-black font-mono font-bold uppercase tracking-wider px-8 py-4 hover:bg-steel-blue-bright hover:text-off-white transition-colors"
             >
               Leave A Review

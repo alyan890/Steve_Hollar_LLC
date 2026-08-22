@@ -62,10 +62,10 @@ export default function ContactPage() {
                 <p className="font-mono text-xs uppercase tracking-widest text-safety-green mb-1">
                   Email
                 </p>
-                
+                <a
                   href="mailto:steveh@stevehollarconcretellc.com"
                   className="text-lg hover:text-safety-green transition-colors break-all"
-               <a>
+                >
                   steveh@stevehollarconcretellc.com
                 </a>
               </div>
@@ -74,7 +74,7 @@ export default function ContactPage() {
                   Service Area
                 </p>
                 <p className="text-lg text-concrete-light">
-                  Serving Brevard County, FL and surrounding areas
+                  Serving all your concrete needs across FL
                 </p>
               </div>
               <div>

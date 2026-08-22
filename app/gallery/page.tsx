@@ -30,6 +30,17 @@ const PROJECTS = [
   { title: "Backyard Patio Extension", category: "Patios", tone: "from-concrete to-charcoal", image: "/optimized/WhatsApp Image 2026-08-18 at 10.27.31 PM (1).webp" },
   { title: "Foundation Slab Work", category: "Slabs", tone: "from-steel-blue-bright to-charcoal", image: "/optimized/WhatsApp Image 2026-08-18 at 10.27.32 PM.webp" },
   { title: "Retaining Wall Construction", category: "Retaining Walls", tone: "from-safety-green/40 to-charcoal", image: "/optimized/WhatsApp Image 2026-08-18 at 10.27.32 PM (1).webp" },
+  { title: "Concrete Driveway Project", category: "Driveways", tone: "from-steel-blue to-charcoal", image: "/optimized/WhatsApp Image 2026-08-21 at 4.48.20 AM.webp" },
+  { title: "Patio Concrete Installation", category: "Patios", tone: "from-concrete to-charcoal", image: "/optimized/WhatsApp Image 2026-08-21 at 4.48.20 AM (1).webp" },
+  { title: "Slab Pour Project", category: "Slabs", tone: "from-steel-blue-bright to-charcoal", image: "/optimized/WhatsApp Image 2026-08-21 at 4.48.20 AM (2).webp" },
+  { title: "Block Work Installation", category: "Block Work", tone: "from-steel-blue to-charcoal", image: "/optimized/WhatsApp Image 2026-08-21 at 4.48.21 AM.webp" },
+  { title: "Retaining Wall Build", category: "Retaining Walls", tone: "from-safety-green/40 to-charcoal", image: "/optimized/WhatsApp Image 2026-08-21 at 4.48.21 AM (1).webp" },
+  { title: "Site Grading Work", category: "Grading", tone: "from-concrete to-charcoal", image: "/optimized/WhatsApp Image 2026-08-21 at 4.48.22 AM.webp" },
+  { title: "Driveway Concrete Pour", category: "Driveways", tone: "from-steel-blue to-charcoal", image: "/optimized/WhatsApp Image 2026-08-21 at 4.48.22 AM (1).webp" },
+  { title: "Patio Extension Project", category: "Patios", tone: "from-concrete to-charcoal", image: "/optimized/WhatsApp Image 2026-08-21 at 4.48.23 AM.webp" },
+  { title: "Concrete Slab Work", category: "Slabs", tone: "from-steel-blue-bright to-charcoal", image: "/optimized/WhatsApp Image 2026-08-21 at 4.48.23 AM (1).webp" },
+  { title: "Masonry Block Project", category: "Block Work", tone: "from-steel-blue to-charcoal", image: "/optimized/WhatsApp Image 2026-08-21 at 4.48.23 AM (2).webp" },
+  { title: "Residential Grading", category: "Grading", tone: "from-concrete to-charcoal", image: "/optimized/WhatsApp Image 2026-08-21 at 4.48.24 AM.webp" },
 ];
 
 export default function GalleryPage() {
