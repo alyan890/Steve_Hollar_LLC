@@ -51,11 +51,6 @@ export const metadata: Metadata = {
       "Family-owned, 3rd generation concrete contractor serving all your concrete needs across FL.",
     images: ["/logo.png"],
   },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/logo.png",
-  },
   manifest: "/site.webmanifest",
 };
 
