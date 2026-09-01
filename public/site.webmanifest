@@ -1,0 +1,18 @@
+{
+  "name": "Steve Hollar Concrete LLC",
+  "short_name": "Steve Hollar Concrete",
+  "description": "Family-owned, 3rd generation concrete contractor serving all your concrete needs across FL. Slabs, driveways, patios, block work, grading & more. Licensed & insured. Free estimates.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0e1110",
+  "theme_color": "#2ecc71",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
