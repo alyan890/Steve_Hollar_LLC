@@ -83,6 +83,14 @@ export default function ScrollVideoHero() {
           >
             Get Free Estimate
           </a>
+          <a
+            href="https://www.google.com/search?sca_esv=6c4be297c7288ca3&rlz=1C1UEAD_enPK1036PK1036&sxsrf=APpeQnvRE5BXo3Vl3RzOs4ynU5TiWxNgGA:1787412742780&q=steve+hollar+concrete+llc+reviews&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_9fdWiv2vbEAcMAMQ3gCX97qI0ZTvbY4LtHgr9MF50ZzwNYf2wK__HOtrbrft5RM57-O1FFbxIymfi4o0_gxLK1MVp-I04GC51ZMQhXnz9a1U8nWZw%3D%3D&sa=X&ved=2ahUKEwiGo-asx7SWAxXk2AIHHW9iE1EQ9qsLegQIHBAG&biw=384&bih=729&dpr=1.88#ebo=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-2 border-safety-green text-safety-green font-mono font-bold uppercase tracking-wider px-8 py-4 hover:bg-safety-green hover:text-steel-blue-bright transition-colors"
+          >
+            Leave a Review
+          </a>
         </div>
 
         <p className="mt-8 animate-bounce font-mono text-xs uppercase tracking-widest text-concrete-light">
