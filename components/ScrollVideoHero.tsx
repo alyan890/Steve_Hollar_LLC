@@ -1,5 +1,6 @@
 "use client";
 
+import { SITE } from "@/lib/site";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -56,11 +57,11 @@ export default function ScrollVideoHero() {
       <div className="absolute inset-0 z-0 bg-linear-to-b from-charcoal/70 via-charcoal/40 to-charcoal" />
 
       <div ref={contentRef} className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6 text-center will-change-transform">
-        <p className="mb-4 font-mono text-sm uppercase tracking-[0.3em] text-safety-green">
-          3rd Generation &middot; Orange County, FL
-        </p>
+        <h1 className="mb-4 font-mono text-sm uppercase tracking-[0.3em] text-safety-green">
+          Concrete Contractor in Apopka, FL &middot; 3rd Generation
+        </h1>
 
-        <h1 className="font-display text-[13vw] leading-[0.9] text-steel-blue-bright drop-shadow-[0_2px_10px_rgba(14,17,16,0.85)] md:text-[7vw]">
+        <p className="font-display text-[13vw] leading-[0.9] text-steel-blue-bright drop-shadow-[0_2px_10px_rgba(14,17,16,0.85)] md:text-[7vw]">
           {"WHEN YOU'RE DONE WITH THE REST,".split(" ").map((word, i) => (
             <span key={i} className="mr-[0.25em] inline-block">
               {word}
@@ -68,7 +69,7 @@ export default function ScrollVideoHero() {
           ))}
           <br />
           <span className="text-safety-green">HOLLAR</span> FOR THE BEST
-        </h1>
+        </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
           <a
@@ -84,7 +85,7 @@ export default function ScrollVideoHero() {
             Get Free Estimate
           </a>
           <a
-            href="https://www.google.com/search?sca_esv=6c4be297c7288ca3&rlz=1C1UEAD_enPK1036PK1036&sxsrf=APpeQnvRE5BXo3Vl3RzOs4ynU5TiWxNgGA:1787412742780&q=steve+hollar+concrete+llc+reviews&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_9fdWiv2vbEAcMAMQ3gCX97qI0ZTvbY4LtHgr9MF50ZzwNYf2wK__HOtrbrft5RM57-O1FFbxIymfi4o0_gxLK1MVp-I04GC51ZMQhXnz9a1U8nWZw%3D%3D&sa=X&ved=2ahUKEwiGo-asx7SWAxXk2AIHHW9iE1EQ9qsLegQIHBAG&biw=384&bih=729&dpr=1.88#ebo=1"
+            href={SITE.reviewUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="border-2 border-safety-green text-safety-green font-mono font-bold uppercase tracking-wider px-8 py-4 hover:bg-safety-green hover:text-steel-blue-bright transition-colors"

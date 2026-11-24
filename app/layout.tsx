@@ -3,6 +3,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import Analytics from "@/components/Analytics";
+import { SITE } from "@/lib/site";
 
 const anton = localFont({
   src: "../public/fonts/Anton-Regular.ttf",
@@ -23,34 +26,42 @@ const jetbrains = localFont({
   display: "swap",
 });
 
+const TITLE = "Concrete Contractor in Apopka, FL | Steve Hollar Concrete LLC";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://stevehollarconcrete.com"),
-  title: "Steve Hollar Concrete LLC | Florida Concrete Contractor",
-  description:
-    "Family-owned, 3rd generation concrete contractor serving all your concrete needs across FL. Slabs, driveways, patios, block work, grading & more. Licensed & insured. Free estimates.",
+  metadataBase: new URL(SITE.url),
+  title: {
+    default: TITLE,
+    template: "%s | Steve Hollar Concrete LLC",
+  },
+  description: SITE.description,
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Steve Hollar Concrete LLC | Florida Concrete Contractor",
-    description:
-      "Family-owned, 3rd generation concrete contractor serving all your concrete needs across FL. Slabs, driveways, patios, block work, grading & more. Licensed & insured. Free estimates.",
+    title: TITLE,
+    description: SITE.description,
+    url: "/",
     images: [
       {
         url: "/logo.png",
         width: 512,
         height: 512,
-        alt: "Steve Hollar Concrete LLC Logo",
+        alt: "Steve Hollar Concrete LLC logo",
       },
     ],
     type: "website",
     locale: "en_US",
-    siteName: "Steve Hollar Concrete LLC",
+    siteName: SITE.name,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Steve Hollar Concrete LLC | Florida Concrete Contractor",
-    description:
-      "Family-owned, 3rd generation concrete contractor serving all your concrete needs across FL.",
+    title: TITLE,
+    description: SITE.description,
     images: ["/logo.png"],
   },
+  // Set NEXT_PUBLIC_GSC_VERIFICATION to the code from Search Console's "HTML tag" method.
+  verification: process.env.NEXT_PUBLIC_GSC_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION }
+    : undefined,
   manifest: "/site.webmanifest",
   icons: {
     icon: "/logo.png",
@@ -69,6 +80,8 @@ export default function RootLayout({
       <body
         className={`${anton.variable} ${workSans.variable} ${jetbrains.variable} antialiased`}
       >
+        <LocalBusinessSchema />
+        <Analytics />
         <Nav />
         {children}
         <Footer />

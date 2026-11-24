@@ -3,7 +3,8 @@
 import { useState } from "react";
 import PageHeader from "@/components/PageHeader";
 import ScrollReveal from "@/components/ScrollReveal";
-import { a } from "framer-motion/client";
+import { trackEvent } from "@/components/Analytics";
+import { SITE } from "@/lib/site";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xzepjnea";
 
@@ -29,6 +30,7 @@ export default function ContactPage() {
 
       if (res.ok) {
         setSubmitted(true);
+        trackEvent("form_submit", { form: "estimate_request" });
         form.reset();
       } else {
         setError(true);
@@ -71,18 +73,20 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="font-mono text-xs uppercase tracking-widest text-safety-green mb-1">
-                  Service Area
+                  Location &amp; Service Area
                 </p>
                 <p className="text-lg text-concrete-light">
-                  Serving all your concrete needs across FL
+                  Based in {SITE.city}, {SITE.state} {SITE.zip}
+                  <br />
+                  Serving {SITE.serviceAreaText}
                 </p>
               </div>
               <div>
                 <p className="font-mono text-xs uppercase tracking-widest text-safety-green mb-1">
-                  Hours
+                  Credentials
                 </p>
                 <p className="text-lg text-concrete-light">
-                  Licensed &amp; Insured &middot; Free Estimates
+                  Licensed &amp; Insured &middot; BBB A+ Accredited &middot; Free Estimates
                 </p>
               </div>
             </div>

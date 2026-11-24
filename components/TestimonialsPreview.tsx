@@ -1,26 +1,6 @@
 import Link from "next/link";
 import ScrollReveal from "./ScrollReveal";
-
-const PLACEHOLDER_REVIEWS = [
-  {
-    quote:
-      "Steve and his crew poured our new driveway and it looks incredible. Showed up on time, cleaned up after themselves, no surprises on the final bill.",
-    name: "Mike Thompson",
-    rating: 5,
-  },
-  {
-    quote:
-      "We had a patio slab done for our backyard and couldn't be happier. You can tell these guys take pride in the work — everything's level and finished clean.",
-    name: "Jessica Ramirez",
-    rating: 5,
-  },
-  {
-    quote:
-      "Called for a free estimate and Steve was out within a couple days. Straightforward pricing, no pressure, and the retaining wall has held up great.",
-    name: "David Coleman",
-    rating: 5,
-  },
-];
+import ReviewProof from "./ReviewProof";
 
 export default function TestimonialsPreview() {
   return (
@@ -33,23 +13,7 @@ export default function TestimonialsPreview() {
           <h2 className="font-display text-4xl md:text-6xl">WHAT FOLKS SAY</h2>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {PLACEHOLDER_REVIEWS.map((r, i) => (
-            <ScrollReveal key={i} delay={i * 0.08}>
-              <div className="border border-concrete/30 p-8 h-full flex flex-col">
-                <div className="text-safety-green mb-4 font-mono">
-                  {"★".repeat(r.rating)}
-                </div>
-                <p className="text-concrete-light italic mb-6 flex-1">
-                  &ldquo;{r.quote}&rdquo;
-                </p>
-                <p className="font-mono text-sm uppercase tracking-wider">
-                  — {r.name}
-                </p>
-              </div>
-            </ScrollReveal>
-          ))}
-        </div>
+        <ReviewProof limit={3} />
 
         <ScrollReveal delay={0.2} className="text-center mt-10">
           <Link

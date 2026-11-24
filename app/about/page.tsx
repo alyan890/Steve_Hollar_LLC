@@ -5,9 +5,10 @@ import ScrollReveal from "@/components/ScrollReveal";
 import CtaBand from "@/components/CtaBand";
 
 export const metadata: Metadata = {
-  title: "About Us | Steve Hollar Concrete LLC",
+  title: "About Our Father & Son Concrete Team",
   description:
-    "Family-owned, father-son concrete team with 85+ years combined experience serving all your concrete needs across FL.",
+    "Meet Steve Hollar Concrete LLC: a family-owned, father-son concrete team in Apopka, FL with 85+ years of combined experience, serving Orange, Seminole & Lake Counties.",
+  alternates: { canonical: "/about" },
 };
 
 const VALUES = [

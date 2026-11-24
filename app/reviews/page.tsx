@@ -1,51 +1,16 @@
+import { SITE } from "@/lib/site";
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import ScrollReveal from "@/components/ScrollReveal";
 import CtaBand from "@/components/CtaBand";
+import ReviewProof from "@/components/ReviewProof";
 
 export const metadata: Metadata = {
-  title: "Reviews | Steve Hollar Concrete LLC",
-  description: "See what customers say about Steve Hollar Concrete LLC.",
+  title: "Customer Reviews",
+  description:
+    "Read reviews of Steve Hollar Concrete LLC, a BBB A+ accredited concrete contractor in Apopka, FL serving Orange, Seminole & Lake Counties.",
+  alternates: { canonical: "/reviews" },
 };
-
-const REVIEWS = [
-  {
-    quote:
-      "Steve and his crew poured our new driveway and it looks incredible. Showed up on time, cleaned up after themselves, no surprises on the final bill.",
-    name: "Mike Thompson",
-    rating: 5,
-  },
-  {
-    quote:
-      "We had a patio slab done for our backyard and couldn't be happier. You can tell these guys take pride in the work — everything's level and finished clean.",
-    name: "Jessica Ramirez",
-    rating: 5,
-  },
-  {
-    quote:
-      "Called for a free estimate and Steve was out within a couple days. Straightforward pricing, no pressure, and the retaining wall has held up great.",
-    name: "David Coleman",
-    rating: 5,
-  },
-  {
-    quote:
-      "Block wall came out exactly how we pictured it. Fair price, and they finished faster than we expected.",
-    name: "Amanda Reyes",
-    rating: 5,
-  },
-  {
-    quote:
-      "Had a sidewalk poured on our commercial property, passed inspection first try. Professional and easy to work with.",
-    name: "Tom Whitfield",
-    rating: 5,
-  },
-  {
-    quote:
-      "Third generation and it shows — they know what they're doing. Site grading was clean and exactly on schedule.",
-    name: "Rachel Norwood",
-    rating: 5,
-  },
-];
 
 export default function ReviewsPage() {
   return (
@@ -54,22 +19,8 @@ export default function ReviewsPage() {
 
       <section className="py-20 bg-charcoal">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid md:grid-cols-3 gap-6 mb-16">
-            {REVIEWS.map((r, i) => (
-              <ScrollReveal key={i} delay={i * 0.06}>
-                <div className="border border-concrete/30 p-8 h-full flex flex-col">
-                  <div className="text-safety-green mb-4 font-mono">
-                    {"★".repeat(r.rating)}
-                  </div>
-                  <p className="text-concrete-light italic mb-6 flex-1">
-                    &ldquo;{r.quote}&rdquo;
-                  </p>
-                  <p className="font-mono text-sm uppercase tracking-wider">
-                    — {r.name}
-                  </p>
-                </div>
-              </ScrollReveal>
-            ))}
+          <div className="mb-16">
+            <ReviewProof />
           </div>
 
           <ScrollReveal className="text-center border-t border-concrete/20 pt-14">
@@ -80,7 +31,7 @@ export default function ReviewsPage() {
               We&rsquo;d love to hear from you — leave us a review.
             </p>
             <a
-              href="https://www.google.com/search?sca_esv=6c4be297c7288ca3&rlz=1C1UEAD_enPK1036PK1036&sxsrf=APpeQnvRE5BXo3Vl3RzOs4ynU5TiWxNgGA:1787412742780&q=steve+hollar+concrete+llc+reviews&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_9fdWiv2vbEAcMAMQ3gCX97qI0ZTvbY4LtHgr9MF50ZzwNYf2wK__HOtrbrft5RM57-O1FFbxIymfi4o0_gxLK1MVp-I04GC51ZMQhXnz9a1U8nWZw%3D%3D&sa=X&ved=2ahUKEwiGo-asx7SWAxXk2AIHHW9iE1EQ9qsLegQIHBAG&biw=384&bih=729&dpr=1.88#ebo=1"
+              href={SITE.reviewUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-safety-green text-caution-black font-mono font-bold uppercase tracking-wider px-8 py-4 hover:bg-steel-blue-bright hover:text-off-white transition-colors"

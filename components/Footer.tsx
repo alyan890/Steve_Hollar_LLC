@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SITE } from "@/lib/site";
 
 const SERVICES = [
   "Slabs",
@@ -56,7 +57,8 @@ export default function Footer() {
                 steveh@stevehollarconcretellc.com
               </a>
             </li>
-            <li className="text-concrete-light">Serving all your concrete needs</li>
+            <li className="text-concrete-light">Based in {SITE.city}, {SITE.state} {SITE.zip}</li>
+            <li className="text-concrete-light">Serving {SITE.serviceAreaText}</li>
             <li className="pt-1 text-xs">Licensed &amp; Insured &middot; Free Estimates</li>
           </ul>
         </div>
